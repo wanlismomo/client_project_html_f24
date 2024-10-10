@@ -1,0 +1,37 @@
+body {
+    background-color: #f2f4f3;
+    color: #333333;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+h1 {
+    font-size: 36px;
+    font-family: 'Helvetica', sans-serif;
+    text-align: center;
+}
+
+h2, h3 {
+    font-size: 28px;
+    font-family: 'Georgia', serif;
+    color: #2a9d8f;
+}
+
+p {
+    line-height: 1.8;
+    margin: 1rem 0;
+}
+
+img {
+    border: 5px solid #264653;
+    padding: 10px;
+    margin: 20px;
+    border-top-right-radius: 30px;
+}
+
+li {
+    display: inline-block;
+    margin-left: 50px;
+}
