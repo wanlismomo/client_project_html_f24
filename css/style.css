@@ -1,37 +1,196 @@
-body {
-    background-color: #f2f4f3;
-    color: #333333;
-    font-family: Arial, sans-serif;
+/* HTML5 reset */
+* {
     margin: 0;
     padding: 0;
-    line-height: 1.6;
+    box-sizing: border-box;
 }
 
-h1 {
-    font-size: 36px;
-    font-family: 'Helvetica', sans-serif;
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 0;
     text-align: center;
 }
 
-h2, h3 {
-    font-size: 28px;
-    font-family: 'Georgia', serif;
-    color: #2a9d8f;
+header h1 {
+    margin: 0;
+    font-size: 1.5em;
 }
 
-p {
-    line-height: 1.8;
-    margin: 1rem 0;
+/* Navigation Styling */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #444;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 5px;
+}
+
+nav ul li a {
+    color: #fff;
+    padding: 10px 15px;
+    text-decoration: none;
+    background-color: #555;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #777;
+}
+
+/* Skip to Main Link */
+a.skip-to-main {
+    position: absolute;
+    top: -40px;
+    left: -10000px;
+    background: #000;
+    color: #fff;
+    padding: 8px 15px;
+    z-index: 100;
+}
+
+a.skip-to-main:focus {
+    top: 10px;
+    left: 10px;
+    transition: top 0.3s ease, left 0.3s ease;
+}
+
+/* Main Content */
+main {
+    margin: 20px 0;
+}
+
+main h2 {
+    font-size: 1.4em;
+    margin-bottom: 15px;
+}
+
+main p {
+    font-size: 1em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* Media Queries for Mobile First Design */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 1.2em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li a {
+        padding: 8px 10px;
+    }
+
+    footer p {
+        font-size: 0.9em;
+    }
+
+    main h2 {
+        font-size: 1.2em;
+    }
+
+    main p {
+        font-size: 0.9em;
+    }
+}
+
+/* Accessibility Enhancements */
+a {
+    outline: none;
+}
+
+a:focus {
+    outline: 2px solid #00f;
 }
 
 img {
-    border: 5px solid #264653;
-    padding: 10px;
-    margin: 20px;
-    border-top-right-radius: 30px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px 0;
 }
 
-li {
-    display: inline-block;
-    margin-left: 50px;
+figure {
+    text-align: center;
+    margin: 20px 0;
+}
+
+figcaption {
+    font-size: 0.9em;
+    color: #555;
+}
+
+/* Form Styling (if needed) */
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Deductions & Console Error Prevention */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Ensure viewport meta tag */
+@viewport {
+    width: device-width;
+    initial-scale: 1.0;
 }
