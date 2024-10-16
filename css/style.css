@@ -75,6 +75,10 @@ nav ul li a.current {
     border-radius: 5px;
 }
 
+h1, h2, h3, main h2 {
+    transition: font-size 0.3s ease;
+}
+
 h1 {
     font-size: 2.5em;
     margin-bottom: 20px;
@@ -93,14 +97,8 @@ h3 {
     color: #468faf;
 }
 
-
 main {
     margin: 20px 0;
-}
-
-main h2 {
-    font-size: 1.4em;
-    margin-bottom: 15px;
 }
 
 main p {
@@ -157,29 +155,21 @@ figcaption {
     transition: top 0.3s ease, left 0.3s ease;
 }
 
-@media (max-width: 768px) {
-    .skip-to-main {
-        display: none;
-    }
+nav ul {
+    flex-direction: column;
+    align-items: center;
 }
 
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
+nav ul li {
+    margin: 5px 0;
+}
 
-    nav ul li {
-        margin: 5px 0;
-    }
+nav ul li a {
+    padding: 10px 0;
+}
 
-    nav ul li a {
-        padding: 10px 0;
-    }
-
-    header h1 {
-        font-size: 1.8em;
-    }
+header h1 {
+    font-size: 1.8em;
 }
 
 a {
@@ -189,4 +179,3 @@ a {
 a:focus {
     outline: 2px solid #00f;
 }
-
