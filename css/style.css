@@ -65,7 +65,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #ffffff;
+    background-color: #000000;
     color: #00274D;
     border-radius: 5px;
 }
