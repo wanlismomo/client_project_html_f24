@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/html5reset.css">
-    <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style.css">
     <title>Student Success Portal</title>
 </head>
 <body>
@@ -99,8 +99,12 @@
         UMGPT. (2024). UMGPT (August 29th version) [Large language model]. -->
     </main>
     <footer>
-        <p style="text-align: center;">Copyright &copy; 2024 The Regents of the University of Michigan, Ann Arbor, MI 48109 USA</p>
+        <p>Copyright &copy; <span id="year"></span> The Regents of the University of Michigan, Ann Arbor, MI 48109 USA. All rights reserved.</p>
     </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
 

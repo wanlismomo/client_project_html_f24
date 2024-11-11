@@ -101,7 +101,11 @@
     </main>
 
     <footer>
-        <p style="text-align: center;">Copyright &copy; 2024 The Regents of the University of Michigan, Ann Arbor, MI 48109 USA</p>
+        <p>Copyright &copy; <span id="year"></span> The Regents of the University of Michigan, Ann Arbor, MI 48109 USA. All rights reserved.</p>
     </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>

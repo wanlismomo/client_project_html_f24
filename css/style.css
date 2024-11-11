@@ -7,19 +7,22 @@
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    padding: 20px;
+    padding: 5%;
     background-color: #f4f4f4;
-    color: #333;
+    color: #00274D;
+    font-size: 18px; /* 增加了基本字体大小从默认的16px到18px */
 }
 
 header {
     position: relative;
     text-align: center;
-    padding: 20px 0;
+    padding: 2vh 0;
 }
 
 .nav-background {
-    position: absolute; 
+    grid-column: 1 / -1;
+    grid-row: 1;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -30,40 +33,40 @@ header {
 }
 
 nav {
-    display: flex;
+    display: grid;
+    grid-column: 1;
+    grid-row: 1;
     justify-content: center;
     align-items: center;
-    padding: 15px 0;
-    position: relative;
-    background-color: rgba(255, 255, 255, 0.3);
-    z-index: 1;
+    padding: 2vh 0;
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     margin: 0;
     padding: 0;
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 0.5vh 0;
 }
 
 nav ul li a {
     display: block;
-    padding: 10px 20px;
-    color: #005f73;
+    padding: 0.8vh 0;
+    color: #00274D;
     text-decoration: none;
     font-weight: bold;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 nav ul li a:hover {
-    background-color: #94d2bd;
-    color: #fff;
+    background-color: #FFCB05;
+    color: #00274D;
     border-radius: 5px;
 }
 
@@ -72,53 +75,50 @@ nav ul li a.current {
     text-decoration: underline;
     color: #ff4500;
     background-color: rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
+    border-radius: 5%;
 }
 
 h1, h2, h3, main h2 {
     transition: font-size 0.3s ease;
+    color: #00274D;
 }
 
 h1 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    color: #00274d;
+    font-size: 3em; /* 增加h1的字体大小 */
+    margin-bottom: 1.2vh;
 }
 
 h2 {
-    font-size: 0.8em;
-    margin-bottom: 15px;
-    color: #005f73;
+    font-size: 2.5em; /* 增加h2的字体大小 */
+    margin-bottom: 1vh;
 }
 
 h3 {
-    font-size: 0.75em;
-    margin-bottom: 10px;
-    color: #468faf;
+    font-size: 2em; /* 增加h3的字体大小 */
+    margin-bottom: 0.8vh;
 }
 
 main {
-    margin: 20px 0;
+    margin: 1.2vh 0;
 }
 
 main p {
-    font-size: 1em;
-    margin-bottom: 10px;
-    color: #333;
+    font-size: 1.1em; /* 增加段落文字的大小 */
+    margin-bottom: 1vh;
 }
 
 footer {
-    background-color: #005f73;
-    color: #fff;
+    background-color: #00274D;
+    color: #FFCB05;
     text-align: center;
-    padding: 20px 0;
+    padding: 1.2vh 0;
     position: relative;
     bottom: 0;
     width: 100%;
 }
 
 footer p {
-    margin: 5px 0;
+    margin: 5% 0;
 }
 
 img {
@@ -131,21 +131,21 @@ img {
 
 figure {
     text-align: center;
-    margin: 20px 0;
+    margin: 1.2vh 0;
 }
 
 figcaption {
-    font-size: 0.9em;
+    font-size: 1em; /* 调整图说文字的大小 */
     color: #555;
 }
 
 .skip-to-main {
-    position: absolute;
+    position:absolute;
     top: -40px;
     left: -10000px;
     background: #000;
     color: #fff;
-    padding: 8px 15px;
+    padding: 0.8vh 1vw;
     z-index: 100;
 }
 
@@ -161,11 +161,11 @@ nav ul {
 }
 
 nav ul li {
-    margin: 5px 0;
+    margin: 0.5vh 0;
 }
 
 nav ul li a {
-    padding: 10px 0;
+    padding: 0.8vh 0;
 }
 
 header h1 {
@@ -176,6 +176,96 @@ a {
     outline: none;
 }
 
-a:focus {
-    outline: 2px solid #00f;
+a:focus {   
+    outline: 1.2vh solid #00f;
+}
+
+
+@media screen and (min-width: 700px) {
+    body {
+        font-family: 'Arial', sans-serif;
+        color: #333; 
+        background-color: #f8f9fa;
+        margin: 0;
+        padding: 0;
+    }
+    
+    a {
+        color: #00274c;
+        text-decoration: none;
+    }
+    
+    a:hover {
+        text-decoration: underline;
+        color: #ffcb05;
+    }
+    
+    header {
+        background-color: #00274c;
+        color: white;
+        padding: 20px 10%;
+        text-align: center;
+    }
+    
+    header img {
+        margin-right: 20px;
+        width: 50px;
+        height: auto;
+    }
+    
+    header h1 {
+        font-size: 2rem;
+        margin: 10px 0;
+    }
+    
+    nav {
+        background-color: #00274c;
+        padding: 10px 0;
+        color: white;
+    }
+    
+    nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding: 0;
+        margin: 0;
+    }
+    
+    nav ul li a {
+        color: #ffcb05;
+        font-weight: bold;
+        font-size: 1rem;
+    }
+    
+    nav ul li a:hover {
+        color: white;
+    }
+    
+    main {
+        max-width: 1200px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+    
+    main h2 {
+        color: #00274c;
+        font-size: 1.75rem;
+        margin-top: 20px;
+        border-bottom: 2px solid #ffcb05;
+        padding-bottom: 5px;
+    }
+    
+    /* Footer */
+    footer {
+        background-color: #00274c;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+        font-size: 0.9rem;
+    }
 }

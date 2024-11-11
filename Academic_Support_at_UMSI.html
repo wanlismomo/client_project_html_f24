@@ -35,10 +35,12 @@
                 <li><a href = "https://docs.google.com/spreadsheets/d/1gpN3gvMDP4Q_ZGC4AoS2Jc2D7LzbSt_kOw2QmU4EU2k/edit">Online Python Resources</a></li>
                 <li>Sweetland Writing Center - Will be update soon</li>
                 <li>English Language Institute (ELI) - Will be update soon</li>
-                <figure>
-                    <img src="./images/Requirement.png" alt="Requirement for graduate">
-                    <figcaption>Requirement for graduate</figcaption>
-                </figure>
+                <li>
+                    <figure>
+                        <img src="./images/Requirement.png" alt="Requirement for graduate">
+                        <figcaption>Requirement for graduate</figcaption>
+                    </figure>
+                </li>
             </ul>
 
 
@@ -70,8 +72,12 @@
     </main>
 
     <footer>
-        <p style="text-align: center;">Copyright &copy; 2024 The Regents of the University of Michigan, Ann Arbor, MI 48109 USA</p>
+        <p>Copyright &copy; <span id="year"></span> The Regents of the University of Michigan, Ann Arbor, MI 48109 USA. All rights reserved.</p>
     </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
     
 </body>
 
