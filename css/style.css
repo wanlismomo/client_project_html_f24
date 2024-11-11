@@ -174,7 +174,8 @@ header h1 {
 }
 
 a {
-    outline: none;
+    color: #00274C;
+    text-decoration: underline;
 }
 
 @media screen and (min-width: 700px) {
@@ -236,7 +237,7 @@ a {
     }
     
     nav ul li a:hover {
-        color: white;
+        color: #ffcb05;
     }
     
     main {
